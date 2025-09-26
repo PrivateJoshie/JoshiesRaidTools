@@ -27,7 +27,7 @@
       border: none;
       width: 100%;
       height: calc(100vh - 80px); /* Höhe des Viewports minus AdSense */
-      border: none;       /* kein Rahmen */
+      border:0;
       outline: none;      /* entfernt ggf. Fokus-Rahmen */
       display: block;
     }
@@ -49,8 +49,7 @@
 
   <!-- Streamlit App via iframe -->
   <iframe id="app-frame" 
-        src="https://joshiesraidtools.streamlit.app?embed=true"
-        style="border:none;">
+        src="https://joshiesraidtools.streamlit.app?embed=true">
   </iframe>
 
 </body>
