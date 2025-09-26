@@ -32,33 +32,6 @@
       outline: none;      /* entfernt ggf. Fokus-Rahmen */
       display: block;
     }
-
-    .wrapper {
-          position: relative;
-          z-index: 1;
-          display: inline-block;
-          width: 100vw;
-        }
-
-        .hidefooter {
-          position: absolute;
-          width: 150px;
-          height: 35px;
-          background: #0E1117;
-          right: 0px;
-          bottom: 0px;
-          z-index: 2;
-          display: block;
-          color: #0E1117;
-        }
-    
-        iframe {
-          display: block;
-          background: #0E1117;
-          border: none;
-          height: 99vh;
-          width: 99vw;
-        }
   </style>
 </head>
 <body>
@@ -77,13 +50,8 @@
 
 
     <!-- Streamlit App via iframe -->
-    
-
-  <div class="wrapper">
-    <div class="hidefooter"></div>
-    <iframe
+    <iframe id="app-frame" 
           src="https://joshiesraidtools.streamlit.app/?embed=true">
     </iframe>
-    </div>
 </body>
 </html>
