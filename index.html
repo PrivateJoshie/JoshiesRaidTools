@@ -25,18 +25,29 @@
     #app-frame {
       border: none;
       width: 100%;
-      height: calc(100vh - 80px); /* Höhe des Viewports minus Höhe der AdSense-Leiste */
+      height: calc(100vh - 80px); /* Höhe des Viewports minus AdSense */
       display: block;
     }
   </style>
 </head>
 <body>
 
+  <!-- AdSense Anzeige -->
+  <div id="adsense-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1590573000976115"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
   <!-- Streamlit App via iframe -->
   <iframe id="app-frame" 
-        src="https://joshiesraidtools.streamlit.app?embed=true">
-</iframe>
-
+        src="https://share.streamlit.io/PrivateJoshie/JoshiesRaidTools/main/app.py?embed=true">
+  </iframe>
 
 </body>
 </html>
